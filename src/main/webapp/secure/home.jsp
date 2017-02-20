@@ -52,6 +52,10 @@
                     $("#mainDiv").html(data);
                 });
             });
+            $("#btnUserAgent").click(function(event) {
+                event.preventDefault();
+                $("#mainDiv").load('/secure/userAgent.jsp');
+            });
         });
     </script>
 </head>
@@ -90,6 +94,11 @@
             <h4>
                 <a href="/secure/users/" id="btnUsers" class="btn btn-sm btn-primary">
                     <span class="glyphicon glyphicon-plus-sign"></span>Users Setting
+                </a>
+            </h4>
+            <h4>
+                <a href="/secure/users/" id="btnUserAgent" class="btn btn-sm btn-primary">
+                    <span class="glyphicon glyphicon-plus-sign"></span>View User Agent
                 </a>
             </h4>
             <hr>
